@@ -40,9 +40,7 @@
 .showcase_preview_selector {
   padding: 13px 17px;
   background: rgba(42, 42, 42, 0.1490196078);
-}
-.showcase_preview_selector svg path {
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 .showcase_preview_selector:hover svg path {
   fill: #F16D7F;
@@ -121,10 +119,7 @@
   font-size: 16px;
   padding: 11px 24px;
   border: 1px solid #F16D7F;
-  transition: 0.3s;
-}
-.showcase_menu_buttons_add svg path {
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 .showcase_menu_buttons_add:hover {
   background: #F16D7F;
