@@ -65,7 +65,7 @@ a {
     top: 75px;
     padding: 32px;
     width: 232px;
-    background: #FFFFFF;
+    background: $colorBackGroundMenu;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 1;
     box-sizing: border-box;
@@ -76,7 +76,7 @@ a {
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
+        color: $colortext;
         padding-bottom: 15px;
     }
 
@@ -270,7 +270,7 @@ a {
             font-weight: 400;
             font-size: 13px;
             line-height: 16px;
-            color: #000000;
+            color: $colortext;
         }
 
         &_text {

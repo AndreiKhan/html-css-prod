@@ -16,6 +16,9 @@
   font-size: 14px;
   font-weight: 300;
 }
+.bread_crumb_links_site:hover {
+  color: #F16D7F;
+}
 .bread_crumb_links_current_site {
   font-size: 14px;
   font-weight: 700;

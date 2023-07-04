@@ -20,6 +20,10 @@
             color: #636363;
             font-size: 14px;
             font-weight: 300;
+
+            &:hover {
+                color: $colorSelectSite;
+            }
         }
 
         &_current_site {
@@ -60,7 +64,7 @@
     &_menu {
         margin-left: calc(50% - $widthSite / 2);
         margin-right: calc(50% - $widthSite / 2);
-        background-color: #FFFFFF;
+        background-color: $colorBackGroundMenu;
         border: 1px solid #EAEAEA;
         display: flex;
         flex-direction: column;
