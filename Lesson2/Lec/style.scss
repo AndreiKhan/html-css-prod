@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.filter_sort {
+    height: 132px;
+    position: relative;
+}
+
+
+.filter {
+    padding: 13px 16px 16px;
+    width: 360px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 39px;
+
+    &[open] {
+        background: #FFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter_heading {
+        color: pink;
+    }
+
+    &[open] path {
+        fill: pink;
+    }
+
+    &_summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    &_heading {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+    }
+
+    &_content {
+        margin-top: 16px;
+
+        &_item {}
+    }
+}
