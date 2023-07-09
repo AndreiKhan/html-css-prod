@@ -1,0 +1,228 @@
+@import 'vars';
+
+.bread_crumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 148px;
+    background-color: #F8F3F4;
+
+    &_current {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: $colorSelectSite;
+    }
+}
+
+.cart {
+    display: flex;
+    gap: 128px;
+    padding-top: 96px;
+    padding-bottom: 128px;
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+
+        &_productBox {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            &_product {
+                position: relative;
+                display: flex;
+                gap: 31px;
+                width: 652px;
+                height: 306px;
+                box-shadow: 17px 19px 24px 0px #00000021;
+
+                &_img {
+                    width: 262px;
+                }
+
+                &_description {
+                    width: 262px;
+                    padding-top: 22px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    &_name {
+                        padding-bottom: 36px;
+                        color: #222;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    &_text {
+                        color: #575757;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    .product_quantity {
+                        margin-left: 24px;
+                        padding: 0px 16px;
+                        border: 1px solid #EAEAEA;
+                    }
+                }
+
+                &_delete {
+                    position: absolute;
+                    right: 22px;
+                    top: 28px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &_redact {
+            display: flex;
+            justify-content: space-between;
+
+            &_button {
+                padding: 17px 40px;
+                border: 1px solid #A4A4A4;
+
+                color: $colortext;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                background-color: #FFF;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: $colorSelectSite;
+                    color: #FFF;
+                    border-color: $colorSelectSite;
+                }
+            }
+        }
+    }
+
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+        width: 360px;
+
+        &_input {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &_head {
+                color: #222;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+
+            &_address {
+                color: #B1B1B1;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding: 13px 17px 16px;
+                border: 1px solid #A4A4A4;
+                border-radius: 0;
+            }
+
+            &_submit {
+                color: #4A4A4A;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                padding: 12px 0;
+                width: 101px;
+                border: 1px solid #A4A4A4;
+                border-radius: 0;
+                background-color: #FFF;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: $colorSelectSite;
+                    color: #FFF;
+                    border-color: $colorSelectSite;
+                }
+            }
+        }
+
+        &_checkout {
+            padding: 39px 43px 42px 44px;
+            background-color: #F5F3F3;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+
+
+
+            &_price {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 12px;
+                padding-bottom: 21px;
+                border-bottom: 1px solid #E2E2E2;
+
+
+                &_subTotal {
+                    color: #4A4A4A;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                &_grandTotal {
+                    color: #222;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                .price {
+                    padding-left: 25px;
+                }
+            }
+
+            &_submit {
+                &_button {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    background-color: $colorSelectSite;
+                    border: 1px solid $colorSelectSite;
+                    width: 100%;
+                    padding-top: 15px;
+                    padding-bottom: 16px;
+
+                    &:active {
+                        filter: brightness(0.9);
+                    }
+                }
+            }
+        }
+    }
+
+    .price_color {
+        color: $colorSelectSite;
+    }
+}
