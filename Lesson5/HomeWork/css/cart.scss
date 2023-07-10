@@ -21,6 +21,10 @@
     padding-top: 96px;
     padding-bottom: 128px;
 
+    .price__color {
+        color: $colorSelectSite;
+    }
+
     &_list {
         display: flex;
         flex-direction: column;
@@ -220,9 +224,5 @@
                 }
             }
         }
-    }
-
-    .price__color {
-        color: $colorSelectSite;
     }
 }
