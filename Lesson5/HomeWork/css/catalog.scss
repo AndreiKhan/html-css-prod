@@ -84,7 +84,7 @@ summary::-webkit-details-marker {
                 box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
             }
 
-            &[open] &__heading {
+            &[open] &__summary__heading {
                 color: $colorSelectSite;
             }
 
@@ -98,14 +98,27 @@ summary::-webkit-details-marker {
                 gap: 11px;
                 padding-bottom: 16px;
                 cursor: pointer;
-            }
 
-            &__heading {
-                color: $colortext;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
+                &:hover &__heading {
+                    color: $colorSelectSite;
+                }
+
+                &:hover svg path {
+                    fill: $colorSelectSite;
+                }
+
+                &__heading {
+                    color: $colortext;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    transition: color 0.3s;
+                }
+
+                & svg path {
+                    transition: fill 0.3s;
+                }
             }
 
             &_content {
@@ -146,9 +159,11 @@ summary::-webkit-details-marker {
                             font-style: normal;
                             font-weight: 400;
                             line-height: normal;
+                            transition: color 0.3s;
 
                             &:hover {
                                 color: $colorSelectSite;
+                                text-decoration: underline;
                             }
                         }
                     }
@@ -163,6 +178,14 @@ summary::-webkit-details-marker {
             &__item {
                 position: relative;
 
+                &[open] &__summary__heading {
+                    color: $colorSelectSite;
+                }
+
+                &[open] path {
+                    fill: $colorSelectSite;
+                }
+
                 &__summary {
                     display: flex;
                     gap: 10px;
@@ -170,14 +193,26 @@ summary::-webkit-details-marker {
                     margin-bottom: 5px;
                     cursor: pointer;
 
-                }
+                    &:hover &__heading {
+                        color: $colorSelectSite;
+                    }
 
-                &__heading {
-                    color: #6F6E6E;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
+                    &:hover svg path {
+                        fill: $colorSelectSite;
+                    }
+
+                    &__heading {
+                        color: #6F6E6E;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        transition: color 0.3s;
+                    }
+
+                    & svg path {
+                        transition: fill 0.3s;
+                    }
                 }
 
                 &_content {
@@ -284,6 +319,84 @@ summary::-webkit-details-marker {
                     fill: $colorSelectSite;
                     cursor: pointer;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1139px) {
+
+    .catalog {
+        &_options {
+            justify-content: space-between;
+        }
+
+        .main_box {
+            &_product:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .bread_crumb {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__current {
+            margin-left: 0;
+        }
+
+        &__list {
+            margin-right: 0;
+        }
+
+    }
+
+    .catalog {
+        &_options {
+            position: relative;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 68px;
+
+            &__filter {
+                width: 50px;
+                position: absolute;
+                left: 0;
+
+                &[open] {
+                    width: 360px;
+                    top: 11px;
+                }
+
+                &[open] &__summary__heading {
+                    display: block;
+                }
+
+                &[open] &__summary__icon {
+                    width: 15px;
+                    height: 10px;
+                }
+
+                &__summary {
+                    &__heading {
+                        display: none;
+                    }
+
+                    &__icon {
+                        width: 25px;
+                        height: 37px;
+                    }
+                }
+            }
+
+            &_sort {
+                position: absolute;
+                right: 0;
+                top: 24px;
             }
         }
     }

@@ -18,6 +18,9 @@
   padding-top: 96px;
   padding-bottom: 128px;
 }
+.cart .price__color {
+  color: #F16D7F;
+}
 .cart_list {
   display: flex;
   flex-direction: column;
@@ -187,6 +190,13 @@
 .cart_form_checkout_submit__button:active {
   filter: brightness(0.9);
 }
-.cart .price__color {
-  color: #F16D7F;
+
+@media (max-width: 768px) {
+  .bread_crumb {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bread_crumb__current {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=cart.css.map */

@@ -226,3 +226,17 @@
         }
     }
 }
+
+@media (max-width: 1139px) {}
+
+@media (max-width: 768px) {
+
+    .bread_crumb {
+        flex-direction: column;
+        justify-content: center;
+
+        &__current {
+            margin-left: 0;
+        }
+    }
+}

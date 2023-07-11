@@ -103,7 +103,6 @@ summary::-webkit-details-marker {
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-bottom: 1px solid #EAEAEA;
 
             &__subtitle {
                 color: $colorSelectSite;
@@ -139,8 +138,14 @@ summary::-webkit-details-marker {
                 color: $colorSelectSite;
                 font-size: 24px;
                 font-weight: 300;
-                padding-bottom: 65px;
             }
+        }
+
+        &__line {
+            border-bottom: 1px solid #EAEAEA;
+            width: 641px;
+            margin-top: 65px;
+            margin-bottom: 65px;
         }
 
         &_buttons {
@@ -150,7 +155,6 @@ summary::-webkit-details-marker {
 
             &_options {
                 display: flex;
-                padding-top: 65px;
                 padding-bottom: 49px;
                 gap: 23px;
 
@@ -198,4 +202,96 @@ summary::-webkit-details-marker {
 .main_box {
     padding-top: 63px;
     padding-bottom: 128px;
+}
+
+@media (max-width: 1139px) {
+
+    .showcase_preview {
+        height: 624px;
+
+        &__image {
+            width: 466px;
+        }
+    }
+
+    .main_box {
+        &_product:nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .bread_crumb {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__current {
+            margin-left: 0;
+        }
+
+        &__list {
+            margin-right: 0;
+        }
+
+    }
+
+
+    .showcase {
+        &_preview {
+            position: relative;
+            justify-content: center;
+
+            &__image {
+                width: 374px;
+            }
+
+            &__selector {
+                position: absolute;
+
+                &_left {
+                    left: 0;
+                }
+
+                &_right {
+                    right: 0;
+                }
+            }
+        }
+
+        &_menu {
+            &_description {
+                &__text {
+                    width: 326px;
+                }
+            }
+
+            &__line {
+                width: 175px;
+            }
+
+            &_buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &_options {
+                    &__item {
+                        &__summary {
+                            &__heading {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .main_box {
+        padding-top: 0px;
+        padding-bottom: 64px;
+    }
 }
