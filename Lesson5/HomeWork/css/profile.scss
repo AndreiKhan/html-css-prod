@@ -83,6 +83,7 @@
             border-radius: 0;
             background-color: $colorSelectSite;
             color: #FFF;
+            font-family: Lato;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -117,7 +118,6 @@
         }
 
         &__list {
-            list-style-position: inside;
             list-style-image: url(../img/check_mark.svg);
             color: #000;
             font-size: 24px;
@@ -128,6 +128,45 @@
             &__item {
                 margin-bottom: 16px;
             }
+        }
+    }
+}
+
+@media (max-width: 1139px) {
+    .profile {
+        gap: 22px;
+
+        &_advantages {
+            width: 354px;
+
+            &__head {
+                font-size: 16px;
+                padding-bottom: 10px;
+            }
+
+            &__text {
+                font-size: 16px;
+            }
+
+            &__list {
+                font-size: 16px;
+
+                &__item {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .bread_crumb {
+        flex-direction: column;
+        justify-content: center;
+
+        &__current {
+            margin-left: 0;
         }
     }
 }

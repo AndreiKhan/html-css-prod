@@ -416,6 +416,7 @@ input {
   padding-right: 19px;
   font-size: 14px;
   color: #FFFFFF;
+  font-family: Lato;
 }
 .subscribe_form_input__submit:active {
   filter: brightness(0.9);
@@ -513,7 +514,7 @@ input {
     margin-right: 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 180px);
     padding-right: calc(50% - 180px);
